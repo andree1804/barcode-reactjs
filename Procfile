@@ -1,1 +1,1 @@
-web:node server.js
+web: sudo npm start
