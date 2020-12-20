@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 
 export const App = () => {
   return (
@@ -8,4 +8,29 @@ export const App = () => {
   );
 };
 
-export default App;
+export default App;*/
+
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import  Qr from './Components/Qr';
+
+class App extends Component {
+    render() {
+      return (
+        <Router>
+            <main className="App container">
+              asdasdasdas
+              <Switch>
+                  <Switch>
+                    <Route exact path="/qr" component={ Qr } />
+                  </Switch>
+                  <div className="container">
+                  </div>
+              </Switch>
+            </main>
+        </Router>
+      )
+    }
+  }
+  
+  export default App;

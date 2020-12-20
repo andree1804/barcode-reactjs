@@ -38,9 +38,10 @@ module.exports = {
 
   // DEV SERVER ENTRY POINT
   devServer: {
+    historyApiFallback: true,
     contentBase: path.resolve(__dirname, "./src"),
-    port: 3500,
+    port: 3501,
     watchContentBase: true,
-    open: true
+    open: true,
   }
 };
