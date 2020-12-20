@@ -1,6 +1,6 @@
 var path = require('path');
 var express = require('express');
-
+console.log('erick');
 var app = express();
 
 app.use(express.static(path.join(__dirname, 'dist')));
