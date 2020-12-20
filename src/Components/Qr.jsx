@@ -1,24 +1,23 @@
 import React, { Component } from 'react'
-import QrReader from 'react-qr-reader'
-
+import QrReader from 'react-qr-scanner'
+ 
 class Qr extends Component {
   constructor(props){
     super(props)
     this.state = {
-      delay: 500,
+      delay: 100,
       result: 'No result',
     }
-
+ 
     this.handleScan = this.handleScan.bind(this)
   }
-  handleScan(result){
-    console.log(result);
-    if(result){
-      this.setState({ result })
-    }
+  handleScan(data){
+    console.log(data);
+    this.setState({
+      result: data,
+    })
   }
   handleError(err){
-    console.error('qwqwqwqwq')
     console.error(err)
   }
   render(){
@@ -26,7 +25,7 @@ class Qr extends Component {
       height: 240,
       width: 320,
     }
-
+ 
     return(
       <div>
         <QrReader
