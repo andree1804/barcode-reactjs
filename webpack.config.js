@@ -11,7 +11,7 @@ module.exports = {
   },
 
   // EVIROMENT MODE
-  mode: process.env.NODE_ENV || 'development',
+  mode: 'production',
 
   // LOADERS
   module: {
@@ -36,12 +36,5 @@ module.exports = {
     ]
   },
 
-  // DEV SERVER ENTRY POINT
-  devServer: {
-    historyApiFallback: true,
-    contentBase: path.resolve(__dirname, "./src"),
-    port: 3501,
-    watchContentBase: true,
-    open: true,
-  }
+
 };
