@@ -4,7 +4,7 @@
   "main": "index.jsx",
   "scripts": {
     "dev": "webpack serve",
-    "start": "react-scripts start",
+    "start": "webpack --mode production",
     "build": "webpack --mode production"
   },
   "keywords": [],
